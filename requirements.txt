@@ -1,5 +1,0 @@
-streamlit
-sentence-transformers
-google-genai
-numpy
-requests
