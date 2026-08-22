@@ -1,0 +1,8 @@
+[server]
+# Nonaktifkan file-watcher agar Streamlit tidak memindai seluruh paket
+# transformers/sentence-transformers (menghilangkan spam "No module named
+# 'torchvision'" di log DAN mempercepat waktu startup di Streamlit Cloud).
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
