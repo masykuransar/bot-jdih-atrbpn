@@ -1,4 +1,13 @@
-streamlit
-sentence-transformers
-numpy
-google-genai
+# =====================================================================
+# Stack RAMPIANG — sengaja tidak pakai sentence-transformers 6.x /
+# transformers 5.x yang raksasa (install GB-an + spam "torchvision").
+# Versi 3.1.1 menarik transformers 4.x (kecil, tanpa modul vision ratusan).
+# =====================================================================
+streamlit==1.39.0
+sentence-transformers==3.1.1
+numpy==1.26.4
+google-genai==0.4.0
+torch==2.4.0
+# Pin pyarrow agar tidak ke-25.x (ada segfault di 25.0.1, Streamlit Cloud
+# otomatis downgrade tiap deploy -> hindari siklus reinstall).
+pyarrow==24.0.0
